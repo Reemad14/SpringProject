@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id ="employee" class="com.sapiens.SpringDemo.ioc.Employee">
+        <property name="id" value="231"/>
+        <property name="name" value="Scooby"/>
+        <property name="age" value="33"/>
+        <property name="gender" value="Male"/>
+    </bean>
+
+    <bean id ="address" class="com.sapiens.SpringDemo.ioc.Address">
+        <property name="city" value="New York"/>
+        <property name="state" value="New York"/>
+        <property name="country" value="United States"/>
+        <property name="pincode" value="10001"/>
+        <property name="PoBoxNumber" value="3421"/>
+    </bean>
+
+    <bean id ="contact" class="com.sapiens.SpringDemo.ioc.Contact">
+        <property name="primaryMobileNo" value="03-24536"/>
+        <property name="secondaryMobileNo" value="03-122346"/>
+        <property name="emergencyContactNo" value="03-72412"/>
+        <property name="emailId" value="Scoopy@example.com"/>
+        <property name="OfficialMailId" value="Scoopy123@example.com"/>
+    </bean>
+
+    <bean id ="officialDetails" class="com.sapiens.SpringDemo.ioc.OfficialDetails">
+        <property name="eduQualification" value="Master"/>
+        <property name="percentage" value="83.7"/>
+        <property name="Designation" value="Organizer"/>
+        <property name="yearsOfExperience" value="8"/>
+        <property name="currentCompanyName" value="example"/>
+    </bean>
+
+</beans>
